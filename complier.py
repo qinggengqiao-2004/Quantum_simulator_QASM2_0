@@ -200,7 +200,7 @@ cu3(pi, pi/2, pi/4) q[0], q[1];
 """
 '''
 
-with open('QFT_3qbit.qasm', 'r') as f:
+with open('qcode.qasm', 'r') as f:
     test_qasm =  f.read()
 
 compiler.compile(test_qasm, "noisy_simulation_circuit.json")
