@@ -185,7 +185,7 @@ hardware_noise = {
 compiler = QASMCompiler(noise_model=hardware_noise)
 
 # 2. 读取你提供的 qelib1.inc 字符串 (此处假设已经保存在变量 qelib_content 中)
-with open('lib/qelib1.inc', 'r') as f:
+with open('qelib1.inc', 'r') as f:
     qelib_content = f.read()
 compiler.load_inc(qelib_content)
 
